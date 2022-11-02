@@ -3,9 +3,8 @@ extends tmp/_base.pug
 block title 
   title Home page
 
-include ./layout/_header.pug
-include ./includes/_banner.pug
-include ./includes/_cards.pug
-include ./includes/_about.pug
-include ./includes/_contact.pug
-include ./layout/_footer.pug
+block content 
+  include includes/_banner.pug
+  include includes/_cards.pug
+  include includes/_about.pug
+  include includes/_contact.pug
