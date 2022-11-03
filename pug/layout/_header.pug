@@ -1,10 +1,20 @@
-//- <<<<<<< HEAD
-//- =======
-
-//- header.header 
-//-   a.header__logo(href="") Logos
-//-   label.header__search(for="search") 
-//-     svg(viewbox='0 0 50 50' width='50' height='50')
-//-       use(xlink:href='../../assets/img/svg-sprite.svg#loc')
-//-     p вдплыывлаыващ
-//- >>>>>>> 0de18517413bd7801bcf3b303cfd61e43684eab9
+header.header.container
+  a.header__logo(href="") Logos
+  .header__info 
+    label.header__search(for="search")
+      ion-icon(name='location-outline')
+      input(type="text" id="search" placeholder="Введите адрес доставки")
+      ion-icon(name='search-outline')
+    .header__info-phone 
+      a(href="") 
+        ion-icon(name='call-outline')
+        .header__info-contact 
+          span Контакты
+          a(href="tel:+7 (917) 510-57-59") +7 (917) 510-57-59
+  button.header__cart 
+    span Корзина
+    hr
+    span 4
+  button.hamburger.hamburger--collapse.is-active(type='button')
+    span.hamburger-box
+      span.hamburger-inner

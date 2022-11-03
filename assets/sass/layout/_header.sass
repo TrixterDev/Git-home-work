@@ -1,0 +1,66 @@
+.header
+  font-family: $font-main
+  display: flex
+  align-items: center
+  color: $white
+  padding: 1.5625rem
+  &__logo
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 1.5625rem
+    margin-right: 4.5rem
+  &__search
+    display: flex
+    align-items: center
+    padding: 1rem 1.125rem
+    background: #504B4A
+    border-radius: .625rem
+    input
+      width: 555px
+      border: none
+      outline: none
+      background: none
+      &::placeholder
+        font-size: 1.125rem
+    ion-icon
+      font-size: 24px
+      &:first-child
+        margin-right: 1.0625rem
+  &__info
+    display: flex
+    align-items: center
+    gap: 30px
+    &-phone
+      display: flex
+      align-items: center
+      gap: 10px
+      ion-icon
+        font-size: 20px
+        padding: 10px
+        background: $bg-btn
+        border-radius: 50%
+    &-contact
+      display: flex
+      flex-direction: column
+  &__cart
+    background: none
+    outline: none
+    border: none
+    display: flex
+    align-items: center
+    margin-left: auto
+    padding: 1.125rem 1.5rem
+    background: $bg-btn
+    gap: .625rem
+    border-radius: .625rem
+    hr
+      height: 20px
+    span
+      &:last-child
+        padding: .3125rem .5rem
+        background: $white
+        border-radius: 50%
+        color: #000
+
+.hamburger
+  display: none
