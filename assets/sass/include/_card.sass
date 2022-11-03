@@ -1,0 +1,41 @@
+.nav
+  padding: 1.5625rem
+  font-family: $font-main
+  color: $white
+  position: relative
+  &::after
+    width: 100%
+    box-sizing: border-box
+    content: ""
+    position: absolute
+    top: 3.9063rem
+    right: 0
+    left: 0
+    height: .0625rem
+    background: #747070
+  &__item
+    justify-content: space-between
+    display: flex
+    a
+      position: relative
+.active
+  &::after
+    position: absolute
+    bottom: -1.25rem
+    right: 0
+    left: 0
+    content: ""
+    width: 100%
+    z-index: 99
+    height: .1875rem
+    background: $green
+    box-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3)
+
+
+.snacks
+  font-family: $font-main
+  color: $white
+  &__title
+    margin-top: 1.5625rem
+    border-left: .1875rem solid $green
+    padding-left: 1.5625rem
