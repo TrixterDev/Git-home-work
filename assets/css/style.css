@@ -303,6 +303,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 .banner-info .info-banner__button .icon-info {
   padding: 12px 12px;
@@ -317,38 +318,42 @@
   font-weight: 600;
 }
 
-.banner .banner__content {
+.banner-image {
+  object-fit: cover;
+}
+
+.info .info__content {
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
   border-radius: 10px;
   display: flex;
   gap: 50px;
 }
-.banner .banner__content .banner__description {
+.info .info__content .info__description {
   font-family: "Gilroy";
   padding-top: 38px;
   color: #fff;
   display: flex;
   flex-direction: column;
 }
-.banner .banner__content .banner__description .banner-desc__title {
+.info .info__content .info__description .info-desc__title {
   margin-bottom: 6px;
   font-weight: bold;
   font-size: 25px;
 }
-.banner .banner__content .banner__description .text__desc {
+.info .info__content .info__description .text__desc {
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 110px;
 }
-.banner .banner__content .banner__description .span {
+.info .info__content .info__description .span {
   margin-bottom: 22px;
 }
-.banner .banner__content .banner__description .basket-price {
+.info .info__content .info__description .basket-price {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.banner .banner__content .banner__description .basket-price .price__button {
+.info .info__content .info__description .basket-price .price__button {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -356,33 +361,39 @@
   border-radius: 10px;
   padding: 15px 30px;
 }
-.banner .banner__content .banner__description .basket-price .price__button hr {
+.info .info__content .info__description .basket-price .price__button hr {
   height: 30px;
 }
-.banner .banner__content .banner__description .basket-price .price__button .icon-price {
+.info .info__content .info__description .basket-price .price__button .icon-price {
   font-size: 20px;
 }
-.banner .banner__content .banner__description .basket-price .check-price {
+.info .info__content .info__description .basket-price .check-price {
   font-size: 25px;
 }
-.banner .banner__content .banner__description .banner-span {
+.info .info__content .info__description .info-span {
   padding-top: 30px;
   display: flex;
   gap: 50px;
 }
-.banner .banner__content .banner__description .banner-span .titles__span {
+.info .info__content .info__description .info-span .titles__span {
   font-size: 12px;
   margin-bottom: 8px;
 }
-.banner .banner__content .banner__description .line {
+.info .info__content .info__description .line {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
 }
-.banner .banner__content .banner__description .span-grams {
+.info .info__content .info__description .span-grams {
   padding-top: 10px;
   display: flex;
   gap: 55px;
   margin-bottom: 15px;
+}
+
+.card__title {
+  padding-top: 50px;
+  font-family: "Gilroy";
+  color: #fff;
 }
 
 @media (max-width: 1290px) {
@@ -390,6 +401,7 @@
     display: none;
   }
   .banner__content {
+    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -405,6 +417,17 @@
     overflow-x: scroll;
   }
 }
+.banner__description {
+  padding-top: 0;
+}
+
+.price__button {
+  padding: 10px 20px;
+}
+.price__button .basket__btn {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;

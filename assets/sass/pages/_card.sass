@@ -27,12 +27,15 @@
 				width: 100%
 				height: 2px
 
+
+
 .banner-info
 	padding-top: 45px
 	.info-banner__button
 		display: flex
 		align-items: center
 		gap: 10px
+		margin-bottom: 30px
 		.icon-info
 			padding: 12px 12px
 			background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%)
@@ -44,19 +47,22 @@
 			font-size: 16px
 			font-weight: 600
 
-.banner
-	.banner__content
+.banner-image
+	object-fit: cover
+
+.info
+	.info__content
 		background: linear-gradient(90deg, #494544 0%, #504B4A 100%)
 		border-radius: 10px
 		display: flex
 		gap: 50px
-		.banner__description
+		.info__description
 			font-family: $font-main
 			padding-top: 38px
 			color: $white
 			display: flex
 			flex-direction: column
-			.banner-desc__title
+			.info-desc__title
 				margin-bottom: 6px
 				font-weight: bold
 				font-size: 25px
@@ -83,7 +89,7 @@
 						font-size: 20px
 				.check-price
 					font-size: 25px
-			.banner-span
+			.info-span
 				padding-top: 30px
 				display: flex
 				gap: 50px
@@ -98,17 +104,23 @@
 				display: flex
 				gap: 55px
 				margin-bottom: 15px
-				
 
 
+.card__title
+	padding-top: 50px
+	font-family: $font-main
+	color: $white
 
 @include media (1290px)
 	.blog-navs
 		display: none
 	.banner__content
+		text-align: center
 		display: flex
 		flex-direction: column
 		padding: 25px
+		// padding-top: 0
+		// gap: 0
 		.img-content__banner
 			width: 100%
 	.banner-span
@@ -116,3 +128,12 @@
 	.title-desc
 		max-width: 100%
 		overflow-x: scroll
+
+.banner__description
+	padding-top: 0
+
+.price__button
+	padding: 10px 20px
+	.basket__btn
+		font-size: 16px
+
