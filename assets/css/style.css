@@ -1,13 +1,88 @@
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url("../../fonts/Gilroy/gilroy-regular.ttf");
+  src: url("../../fonts/Gilroy/Gilroy-Black.woff");
 }
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Bold.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Extrabold");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Medium.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Regular.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Semibold.woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustD2Demo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustDemo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustDemo-Sh1.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustLH1Demo-Fill.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingSansRustLDemo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingScriptRustSBDemo-Base.otf") format("woff");
+}
+.header {
+  font-family: Gilroy, sans-serif;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5625rem;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.125rem;
+  background: #504B4A;
+}
+.header__search input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: inherit;
-  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: #403C3B;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
