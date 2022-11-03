@@ -1,0 +1,17 @@
+.banner
+  background: url(../img/banner.png) no-repeat
+  background-size: cover
+  min-height: 555px
+  font-family: $font-secondary
+  text-transform: uppercase
+  object-fit: fill
+  color: $white
+  &__content
+    img
+      margin-top: 7.5rem
+
+@media screen and ( max-width: 40.3125rem )
+  .banner
+    &__content
+      img
+        width: 100%

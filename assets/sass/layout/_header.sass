@@ -72,6 +72,7 @@
 
 .hamburger
   display: none
+  padding: 0
   p
     text-transform: uppercase
     opacity: 1
@@ -94,6 +95,8 @@
     &__cart
       margin: 0
     &__cart
+      padding: 15px
+      p
       ion-icon
         display: block
         font-size: 1.5rem
@@ -127,3 +130,8 @@
         box-sizing: border-box
         &-block
           padding: 1.5625rem
+
+@media screen and ( max-width: 27.1875rem )
+  .header
+    &__logo
+      font-size: 20px

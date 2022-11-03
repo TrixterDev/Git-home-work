@@ -22,30 +22,6 @@
   font-family: "Gilroy";
   src: url("../fonts/Gilroy/Gilroy-Semibold.woff");
 }
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustD2Demo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustDemo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustDemo-Sh1.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustLH1Demo-Fill.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingSansRustLDemo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingScriptRustSBDemo-Base.otf") format("woff");
-}
 .header {
   font-family: "Gilroy";
   display: flex;
@@ -135,6 +111,7 @@
 
 .hamburger {
   display: none;
+  padding: 0;
 }
 .hamburger p {
   text-transform: uppercase;
@@ -162,6 +139,9 @@
   }
   .header__logo, .header__cart {
     margin: 0;
+  }
+  .header__cart {
+    padding: 15px;
   }
   .header__cart ion-icon {
     display: block;
@@ -204,6 +184,83 @@
     padding: 1.5625rem;
   }
 }
+@media screen and (max-width: 27.1875rem) {
+  .header__logo {
+    font-size: 20px;
+  }
+}
+.banner {
+  background: url(../img/banner.png) no-repeat;
+  background-size: cover;
+  min-height: 555px;
+  font-family: ZingRustDemo, sans-serif;
+  text-transform: uppercase;
+  object-fit: fill;
+  color: #fff;
+}
+.banner__content img {
+  margin-top: 7.5rem;
+}
+
+@media screen and (max-width: 40.3125rem) {
+  .banner__content img {
+    width: 100%;
+  }
+}
+.about {
+  background: url(../img/aboutBg.png) no-repeat;
+  background-size: cover;
+  min-height: 610px;
+  font-family: "Gilroy";
+}
+.about__content {
+  padding: 70px 100px;
+  color: #fff;
+  display: flex;
+  gap: 130px;
+}
+.about .title__about {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom: 26px;
+}
+.about .text__about {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.about .btn {
+  padding-top: 60px;
+}
+.about .btn .about__btn {
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(2.5px);
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.icons {
+  background: rgba(80, 75, 74, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons .icon__img {
+  margin-bottom: 36px;
+  padding-top: 70px;
+}
+
+.about__blog {
+  display: flex;
+  gap: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
