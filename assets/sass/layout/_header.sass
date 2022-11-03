@@ -9,14 +9,18 @@
     text-transform: uppercase
     font-size: 1.5625rem
     margin-right: 4.5rem
-  &__search
+  &__search,
+  &__search-adaptive
+    color: $white
     display: flex
     align-items: center
     padding: 1rem 1.125rem
     background: #504B4A
     border-radius: .625rem
+    margin-right: 30px
+    width: 100%
     input
-      width: 555px
+      width: 100%
       border: none
       outline: none
       background: none
@@ -26,19 +30,18 @@
       font-size: 24px
       &:first-child
         margin-right: 1.0625rem
-  &__info
+  &__search-adaptive
+    display: none
+  &__phone
     display: flex
     align-items: center
-    gap: 30px
-    &-phone
-      display: flex
-      align-items: center
-      gap: 10px
-      ion-icon
-        font-size: 20px
-        padding: 10px
-        background: $bg-btn
-        border-radius: 50%
+    gap: 10px
+    width: 100%
+    ion-icon
+      font-size: 20px
+      padding: 10px
+      background: $bg-btn
+      border-radius: 50%
     &-contact
       display: flex
       flex-direction: column
@@ -53,14 +56,74 @@
     background: $bg-btn
     gap: .625rem
     border-radius: .625rem
+    transition: .6s all
     hr
       height: 20px
+      background: rgba(255, 255, 255, 0.3)
+    p
+      padding: .3125rem .5rem
+      background: $white
+      border-radius: 50%
+      color: #000
     span
-      &:last-child
-        padding: .3125rem .5rem
-        background: $white
-        border-radius: 50%
-        color: #000
+      font-size: 14px
+    ion-icon
+      display: none
 
 .hamburger
   display: none
+  p
+    text-transform: uppercase
+    opacity: 1
+  &-inner
+    background: #65906C
+    &::after,
+    &::before
+      background: #65906C
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: #65906C
+
+@media screen and ( max-width: 1020px )
+  .hamburger
+    display: block
+    z-index: 99
+  .header
+    position: relative
+    justify-content: space-between
+    &__logo,
+    &__cart
+      margin: 0
+    &__cart
+      ion-icon
+        display: block
+        font-size: 1.5rem
+      span
+        display: none
+    &__phone
+      max-width: 0
+      position: absolute
+      overflow: hidden
+      top: 95px
+      z-index: 99
+      left: 0
+      width: 100%
+      flex-direction: column
+      transition: .6s all
+      background: $grey
+      padding: 10px
+      text-align: center
+      border-top-right-radius: 10px
+      border-bottom-right-radius: 10px
+      padding-left: 0
+      padding-right: 0
+      &.is-active
+        max-width: 150px
+        padding-left: 10px
+        padding-right: 10px
+    &__search
+      display: none
+      &-adaptive
+        display: flex
+        box-sizing: border-box
+        &-block
+          padding: 1.5625rem
