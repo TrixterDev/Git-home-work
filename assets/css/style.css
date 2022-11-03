@@ -1,13 +1,125 @@
 @font-face {
   font-family: "Gilroy", sans-serif;
-  src: url("../../fonts/Gilroy/gilroy-regular.ttf");
+  src: url("../../fonts/Gilroy/Gilroy-Black.woff");
 }
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Bold.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Extrabold");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Medium.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Regular.woff");
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../../fonts/Gilroy/Gilroy-Semibold.woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustD2Demo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustDemo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustDemo-Sh1.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingRustLH1Demo-Fill.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingSansRustLDemo-Base.otf") format("woff");
+}
+@font-face {
+  font-family: "ZingRustDemo", sans-serif;
+  src: url("../../fonts/zing/ZingScriptRustSBDemo-Base.otf") format("woff");
+}
+.about {
+  background: url(../img/aboutBg.png) no-repeat;
+  background-size: cover;
+  min-height: 610px;
+  font-family: Gilroy, sans-serif;
+}
+.about__content {
+  padding: 70px 100px;
+  color: #fff;
+  display: flex;
+  gap: 130px;
+}
+.about .title__about {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom: 26px;
+}
+.about .text__about {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.about .btn {
+  padding-top: 60px;
+}
+.about .btn .about__btn {
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(2.5px);
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.icons {
+  background: rgba(80, 75, 74, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons .icon__img {
+  margin-bottom: 36px;
+  padding-top: 70px;
+}
+
+.about__blog {
+  display: flex;
+  gap: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   color: inherit;
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: #403C3B;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: ZingRustDemo, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
