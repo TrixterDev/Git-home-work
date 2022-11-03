@@ -94,7 +94,8 @@
 }
 .header__cart hr {
   height: 20px;
-  background: rgba(255, 255, 255, 0.3);
+  width: 0.0625rem;
+  background: rgba(255, 255, 255, 0.3) !important;
 }
 .header__cart p {
   padding: 0.3125rem 0.5rem;
@@ -442,6 +443,10 @@ body {
 .container {
   max-width: 80rem;
   margin: 0 auto;
+}
+
+hr {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
