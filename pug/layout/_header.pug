@@ -1,0 +1,26 @@
+header.header.container
+  button.hamburger.hamburger--collapse(type='button')
+    span.hamburger-box
+      span.hamburger-inner
+    p Меню
+  a.header__logo(href="") Logos
+  label.header__search(for="search")
+    ion-icon(name='location-outline')
+    input(type="text" id="search" placeholder="Введите адрес доставки")
+    ion-icon(name='search-outline')
+  .header__phone 
+    a(href="") 
+      ion-icon(name='call-outline')
+      .header__phone-contact 
+        span Контакты
+        a(href="tel:+7 (917) 510-57-59") +7 (917) 510-57-59
+  button.header__cart 
+    ion-icon(name='cart-outline')
+    span Корзина
+    hr
+    p 4
+.header__search-adaptive-block 
+  label.header__search-adaptive(for="search")
+    ion-icon(name='location-outline')
+    input(type="text" id="search" placeholder="Введите адрес доставки")
+    ion-icon(name='search-outline')

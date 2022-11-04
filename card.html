@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Home page</title>
     <body>
+      <header class="header container">
+        <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          <p>Меню</p>
+        </button><a class="header__logo" href="">Logos</a>
+        <label class="header__search" for="search">
+          <ion-icon name="location-outline"></ion-icon>
+          <input type="text" id="search" placeholder="Введите адрес доставки">
+          <ion-icon name="search-outline"></ion-icon>
+        </label>
+        <div class="header__phone"> <a href=""> 
+            <ion-icon name="call-outline"></ion-icon>
+            <div class="header__phone-contact"> <span>Контакты</span><a href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a></div></a></div>
+        <button class="header__cart"> 
+          <ion-icon name="cart-outline"></ion-icon><span>Корзина</span>
+          <hr>
+          <p>4</p>
+        </button>
+      </header>
+      <div class="header__search-adaptive-block"> 
+        <label class="header__search-adaptive" for="search">
+          <ion-icon name="location-outline"></ion-icon>
+          <input type="text" id="search" placeholder="Введите адрес доставки">
+          <ion-icon name="search-outline"></ion-icon>
+        </label>
+      </div>
       <div class="blog-navs container">
         <div class="info-navs"> 
           <nav class="nav-card__info"> <a class="nav__info" href="#">Холодные закуски</a><a class="nav__info" href="#">Горячие закуски</a><a class="nav__info" href="#">Мясные блюда</a><a class="nav__info" href="#">Супы</a><a class="nav__info" href="#">Рыбные блюда</a><a class="nav__info" href="#">Гриль меню</a><a class="nav__info" href="#">Фирменнные блюда</a><a class="nav__info" href="#">Напитки</a></nav>
@@ -17,11 +42,11 @@
         <div class="info-banner__button"> 
           <ion-icon class="icon-info" name="chevron-back-outline"></ion-icon><a class="link-back" href="#">Вернуться назад</a>
         </div>
-        <div class="banner"> 
-          <div class="banner__content"> 
-            <div class="banner-image"> <img class="img-content__banner" src="assets/img/banner-img-content.png" alt=""></div>
-            <div class="banner__description"> 
-              <h2 class="banner-desc__title">Ягнёнок</h2>
+        <div class="info">
+          <div class="info__content"> 
+            <div class="info-image"> <img class="img-content__info" src="assets/img/banner-img-content.png" alt=""></div>
+            <div class="info__description"> 
+              <h2 class="info-desc__title">Ягнёнок</h2>
               <p class="text__desc">
                  помидор, сыр фета, масло подсолнечное, капуста пекинская, <br> перец сладкий красный, огурцы, оливки без косточек</p><span class="span">Вес: 210 г</span>
               <div class="basket-price"> 
@@ -32,7 +57,7 @@
                 <h2 class="check-price">259 ₽</h2>
               </div>
               <div class="title-desc"> 
-                <div class="banner-span"><span class="titles__span">Белки</span><span class="titles__span">Жиры</span><span class="titles__span">Углеводы </span><span class="titles__span">Ккал</span><span class="titles__span">Вес</span></div>
+                <div class="info-span"><span class="titles__span">Белки</span><span class="titles__span">Жиры</span><span class="titles__span">Углеводы </span><span class="titles__span">Ккал</span><span class="titles__span">Вес</span></div>
                 <hr class="line">
                 <div class="span-grams"> <span class="grams">17.23</span><span class="grams">7.63</span><span class="grams">22.35</span><span class="grams">234</span><span class="grams">210</span></div>
               </div>
@@ -44,6 +69,7 @@
         <h2 class="title-blog__cards">С ЭТИМ ТОВАРОМ ПОКУПАЮТ</h2>
       </div><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="./assets/js/script.js"> </script>
     </body>
   </head>
 </html>

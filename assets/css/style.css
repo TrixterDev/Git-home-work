@@ -22,30 +22,6 @@
   font-family: "Gilroy";
   src: url("../fonts/Gilroy/Gilroy-Semibold.woff");
 }
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustD2Demo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustDemo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustDemo-Sh1.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingRustLH1Demo-Fill.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingSansRustLDemo-Base.otf") format("woff");
-}
-@font-face {
-  font-family: "ZingRustDemo";
-  src: url("../fonts/zing/ZingScriptRustSBDemo-Base.otf") format("woff");
-}
 .header {
   font-family: "Gilroy";
   display: flex;
@@ -59,45 +35,47 @@
   font-size: 1.5625rem;
   margin-right: 4.5rem;
 }
-.header__search {
+.header__search, .header__search-adaptive {
+  color: #fff;
   display: flex;
   align-items: center;
   padding: 1rem 1.125rem;
   background: #504B4A;
   border-radius: 0.625rem;
+  margin-right: 30px;
+  width: 100%;
 }
-.header__search input {
-  width: 555px;
+.header__search input, .header__search-adaptive input {
+  width: 100%;
   border: none;
   outline: none;
   background: none;
 }
-.header__search input::placeholder {
+.header__search input::placeholder, .header__search-adaptive input::placeholder {
   font-size: 1.125rem;
 }
-.header__search ion-icon {
+.header__search ion-icon, .header__search-adaptive ion-icon {
   font-size: 24px;
 }
-.header__search ion-icon:first-child {
+.header__search ion-icon:first-child, .header__search-adaptive ion-icon:first-child {
   margin-right: 1.0625rem;
 }
-.header__info {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.header__search-adaptive {
+  display: none;
 }
-.header__info-phone {
+.header__phone {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
-.header__info-phone ion-icon {
+.header__phone ion-icon {
   font-size: 20px;
   padding: 10px;
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
   border-radius: 50%;
 }
-.header__info-contact {
+.header__phone-contact {
   display: flex;
   flex-direction: column;
 }
@@ -112,21 +90,123 @@
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
   gap: 0.625rem;
   border-radius: 0.625rem;
+  transition: 0.6s all;
 }
 .header__cart hr {
   height: 20px;
+  background: rgba(255, 255, 255, 0.3);
 }
-.header__cart span:last-child {
+.header__cart p {
   padding: 0.3125rem 0.5rem;
   background: #fff;
   border-radius: 50%;
   color: #000;
 }
-
-.hamburger {
+.header__cart span {
+  font-size: 14px;
+}
+.header__cart ion-icon {
   display: none;
 }
 
+.hamburger {
+  display: none;
+  padding: 0;
+}
+.hamburger p {
+  text-transform: uppercase;
+  opacity: 1;
+}
+.hamburger-inner {
+  background: #65906C;
+}
+.hamburger-inner::after, .hamburger-inner::before {
+  background: #65906C;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color: #65906C;
+}
+
+@media screen and (max-width: 1020px) {
+  .hamburger {
+    display: block;
+    z-index: 99;
+  }
+  .header {
+    position: relative;
+    justify-content: space-between;
+  }
+  .header__logo, .header__cart {
+    margin: 0;
+  }
+  .header__cart {
+    padding: 15px;
+  }
+  .header__cart ion-icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .header__cart span {
+    display: none;
+  }
+  .header__phone {
+    max-width: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 95px;
+    z-index: 99;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    transition: 0.6s all;
+    background: #CFCFCF;
+    padding: 10px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header__phone.is-active {
+    max-width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header__search {
+    display: none;
+  }
+  .header__search-adaptive {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .header__search-adaptive-block {
+    padding: 1.5625rem;
+  }
+}
+@media screen and (max-width: 27.1875rem) {
+  .header__logo {
+    font-size: 20px;
+  }
+}
+.banner {
+  background: url(../img/banner.png) no-repeat;
+  background-size: cover;
+  min-height: 555px;
+  font-family: ZingRustDemo, sans-serif;
+  text-transform: uppercase;
+  object-fit: fill;
+  color: #fff;
+}
+.banner__content img {
+  margin-top: 7.5rem;
+}
+
+@media screen and (max-width: 40.3125rem) {
+  .banner__content img {
+    width: 100%;
+  }
+}
 .about {
   background: url(../img/aboutBg.png) no-repeat;
   background-size: cover;
@@ -241,38 +321,38 @@
   object-fit: cover;
 }
 
-.banner .banner__content {
+.info .info__content {
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
   border-radius: 10px;
   display: flex;
   gap: 50px;
 }
-.banner .banner__content .banner__description {
+.info .info__content .info__description {
   font-family: "Gilroy";
   padding-top: 38px;
   color: #fff;
   display: flex;
   flex-direction: column;
 }
-.banner .banner__content .banner__description .banner-desc__title {
+.info .info__content .info__description .info-desc__title {
   margin-bottom: 6px;
   font-weight: bold;
   font-size: 25px;
 }
-.banner .banner__content .banner__description .text__desc {
+.info .info__content .info__description .text__desc {
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 110px;
 }
-.banner .banner__content .banner__description .span {
+.info .info__content .info__description .span {
   margin-bottom: 22px;
 }
-.banner .banner__content .banner__description .basket-price {
+.info .info__content .info__description .basket-price {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-.banner .banner__content .banner__description .basket-price .price__button {
+.info .info__content .info__description .basket-price .price__button {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -280,29 +360,29 @@
   border-radius: 10px;
   padding: 15px 30px;
 }
-.banner .banner__content .banner__description .basket-price .price__button hr {
+.info .info__content .info__description .basket-price .price__button hr {
   height: 30px;
 }
-.banner .banner__content .banner__description .basket-price .price__button .icon-price {
+.info .info__content .info__description .basket-price .price__button .icon-price {
   font-size: 20px;
 }
-.banner .banner__content .banner__description .basket-price .check-price {
+.info .info__content .info__description .basket-price .check-price {
   font-size: 25px;
 }
-.banner .banner__content .banner__description .banner-span {
+.info .info__content .info__description .info-span {
   padding-top: 30px;
   display: flex;
   gap: 50px;
 }
-.banner .banner__content .banner__description .banner-span .titles__span {
+.info .info__content .info__description .info-span .titles__span {
   font-size: 12px;
   margin-bottom: 8px;
 }
-.banner .banner__content .banner__description .line {
+.info .info__content .info__description .line {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
 }
-.banner .banner__content .banner__description .span-grams {
+.info .info__content .info__description .span-grams {
   padding-top: 10px;
   display: flex;
   gap: 55px;
