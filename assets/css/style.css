@@ -389,26 +389,20 @@
   margin-bottom: 15px;
 }
 
-.card__title {
-  padding-top: 50px;
-  font-family: "Gilroy";
-  color: #fff;
-}
-
 @media (max-width: 1290px) {
   .blog-navs {
     display: none;
   }
-  .banner__content {
+  .info__content {
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 25px;
   }
-  .banner__content .img-content__banner {
+  .info__content .img-content__info {
     width: 100%;
   }
-  .banner-span {
+  .info-span {
     max-width: 100%;
   }
   .title-desc {
@@ -416,7 +410,7 @@
     overflow-x: scroll;
   }
 }
-.banner__description {
+.info__description {
   padding-top: 0;
 }
 
@@ -425,6 +419,12 @@
 }
 .price__button .basket__btn {
   font-size: 16px;
+}
+
+.card__title {
+  padding-top: 50px;
+  font-family: "Gilroy";
+  color: #fff;
 }
 
 * {
