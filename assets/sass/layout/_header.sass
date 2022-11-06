@@ -85,7 +85,7 @@
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
   background-color: #65906C
 
-@media screen and ( max-width: 1020px )
+@include media ( 1020px )
   .hamburger
     display: block
     z-index: 99
@@ -103,13 +103,12 @@
       span
         display: none
     &__phone
-      max-width: 0
+      max-width: 9.375rem
       position: absolute
       overflow: hidden
       top: 95px
       z-index: 99
-      left: 0
-      width: 100%
+      left: -220px
       flex-direction: column
       transition: .6s all
       background: $grey
@@ -117,12 +116,8 @@
       text-align: center
       border-top-right-radius: 10px
       border-bottom-right-radius: 10px
-      padding-left: 0
-      padding-right: 0
       &.is-active
-        max-width: 150px
-        padding-left: 10px
-        padding-right: 10px
+        left: 0
     &__search
       display: none
       &-adaptive
@@ -131,7 +126,7 @@
         &-block
           padding: 1.5625rem
 
-@media screen and ( max-width: 27.1875rem )
+@include media ( 27.1875rem )
   .header
     &__logo
       font-size: 20px
