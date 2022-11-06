@@ -232,6 +232,23 @@
 .nav__item a {
   position: relative;
 }
+.nav__item a::after {
+  position: absolute;
+  bottom: -1.25rem;
+  right: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  opacity: 0;
+  z-index: 99;
+  height: 0.1875rem;
+  background: #618967;
+  box-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3);
+  transition: 0.6s all;
+}
+.nav__item a:hover:after {
+  opacity: 1;
+}
 
 .active::after {
   position: absolute;
