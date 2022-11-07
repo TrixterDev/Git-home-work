@@ -425,6 +425,133 @@
   padding-top: 50px;
   font-family: "Gilroy";
   color: #fff;
+  padding-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  font-family: "Gilroy";
+  gap: 20px;
+}
+.cards .card {
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 50px;
+  transition: 0.6s all;
+  height: 385px;
+  position: relative;
+}
+.cards .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 30px 45px rgba(43, 40, 40, 0.6);
+  cursor: pointer;
+}
+.cards .card .card-desc__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.cards .card .card-desc__subtitle .chicken-card__title {
+  font-weight: bold;
+  font-size: 22px;
+}
+.cards .card .card-desc__subtitle .chicken-span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.cards .card .chicken-text {
+  margin-left: 18px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.cards .card .card-price__button {
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  position: absolute;
+  gap: 100px;
+  bottom: 20px;
+}
+.cards .card .card-price__button .buttons-card {
+  padding: 10px 20px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.card__image {
+  border-radius: 10px;
+}
+
+@media (max-width: 1290px) {
+  .cards {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+  }
+  .card {
+    height: 420px;
+    width: 100%;
+  }
+  .title-blog__cards {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+  .buttons-card {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .card-price__button {
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-price__button .buttons-card {
+    margin-left: auto;
+  }
+}
+.contact-about {
+  background: url(../img/contact-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.contact-blog__content {
+  display: flex;
+  font-family: "Gilroy";
+}
+
+.number-data {
+  width: 530px;
+  height: 405px;
+  background: #2E2B2C;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+  margin-top: 55px;
+  border-radius: 15px;
+  padding: 30px;
+}
+.number-data .number-data__title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.location-data {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 16px;
+  color: #ccc;
 }
 
 * {
