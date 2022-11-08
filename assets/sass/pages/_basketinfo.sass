@@ -1,0 +1,32 @@
+.blog-navs
+  padding-top: 30px
+  border-top: 1px solid rgba(255, 255, 255, 0.1)
+  border-bottom:  1px solid rgba(255, 255, 255, 0.1)
+  font-family: $font-main
+  .nav-card__info
+    display: flex
+    gap: 45px
+    color: $white
+    margin-bottom: 30px
+    .nav__info
+      position: relative
+      font-size: 18px
+      font-weight: 400
+      &::before
+        content: ''
+        position: absolute
+        right: 0
+        bottom: 0
+        border-bottom: solid 2px $white
+        width: 0
+        height: 0
+        opacity: 0
+        transition: .6s all
+      &:hover::before
+        opacity: 1
+        width: 100%
+        height: 2px
+
+
+
+
