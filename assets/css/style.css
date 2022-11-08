@@ -533,10 +533,10 @@
 
 .number-data {
   width: 530px;
-  height: 405px;
+  height: 520px;
   background: #2E2B2C;
   box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
-  margin-top: 55px;
+  margin-top: 50px;
   border-radius: 15px;
   padding: 30px;
 }
@@ -545,6 +545,8 @@
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #fff;
 }
 
 .location-data {
@@ -553,6 +555,122 @@
   gap: 15px;
   padding-top: 16px;
   color: #ccc;
+}
+.location-data .span-loc {
+  color: #e0dfdf;
+  font-weight: 400;
+}
+
+.loc-email {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 36px;
+  padding-top: 16px;
+}
+
+.location-data__info {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  gap: 35px;
+}
+
+.location__btn {
+  padding: 22px 30px;
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.info-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.loc-number {
+  font-size: 24px;
+}
+
+.span-info__number {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.text-loc {
+  color: #fff;
+  margin-left: 32px;
+  font-size: 16px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+.icon-social {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+.icon-social .icon-social__text {
+  font-weight: 600;
+  font-size: 18px;
+}
+.icon-social .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-social .social-icons .icon-session__social {
+  padding: 7px 7px;
+  border-radius: 7px;
+  transition: 0.8s all;
+}
+.icon-social .social-icons .icon-session__social:hover {
+  padding: 7px 7px;
+  background: rgba(255, 255, 255, 0.2470588235);
+  color: #fff;
+  border-radius: 7px;
+}
+
+.location__btn2 {
+  display: none;
+}
+
+@media (max-width: 1290px) {
+  .location-data__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-social__text {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .icon-session__social {
+    padding: 5px 5px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 5px;
+  }
+}
+.icon-loc__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.icon-loc__btn .location__btn2 {
+  display: block;
+  padding: 20px 30px;
+  background: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.5568627451);
+  color: #fff;
+  border-radius: 10px;
 }
 
 * {
